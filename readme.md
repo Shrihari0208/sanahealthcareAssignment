@@ -6,8 +6,9 @@ the exercise. This set up includes:
 • React / React DOM
 • React Router
 • Mantine UI
-• React Query
+• React Query, Typescript
 • Zustand
+
 Task
 There are five success criteria for the exercise, each should be combined into the codebase provided
 and work together as a single integrated solution:
