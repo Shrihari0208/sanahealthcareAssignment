@@ -7,11 +7,13 @@ import {
   Paper,
   ThemeIcon,
   SimpleGrid,
+  Anchor,
 } from "@mantine/core";
 import {
   IconHeartbeat,
   IconShieldCheck,
   IconUserPlus,
+  IconBrandGithub,
 } from "@tabler/icons-react";
 import { useNavigate } from "react-router-dom";
 import { useAuthStore, selectIsAuthenticated } from "../store/authStore"; // To redirect if already logged in
@@ -98,6 +100,19 @@ export function SanaLandingPage() {
       <Text align="center" mt="md" c="dimmed">
         Streamlining healthcare for a better tomorrow.
       </Text>
+      <Group position="center" mt="sm">
+        <Anchor
+          href="https://github.com/Shrihari0208/sanahealthcareAssignment"
+          target="_blank"
+          c="dimmed"
+          size="sm"
+        >
+          <Group spacing="xs" noWrap>
+            <IconBrandGithub size={16} />
+            <Text inherit>View Project on GitHub</Text>
+          </Group>
+        </Anchor>
+      </Group>
     </Container>
   );
 }
